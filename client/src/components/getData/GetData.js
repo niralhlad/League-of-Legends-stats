@@ -63,7 +63,7 @@ function GetData() {
           console.log(err);
           setMatches([]);
           //if server is down
-          if(err.name && ( err.name === "AxiosError"){
+          if(err.name && err.name === "AxiosError"){
              if(err.code){
               if(err.code === "ERR_NETWORK")
                 setStatus(<div className='status-error'>ERROR : "Not able to connect with server"</div>);
