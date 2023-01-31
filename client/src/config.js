@@ -1,3 +1,3 @@
 module.exports = {
-    URL: 'http://localhost:3050/api/'
+    SERVER_URL: 'https://niralhlad-lol-middleware.onrender.com'
 }

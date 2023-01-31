@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './GetData.css';
+const config = require('../../config.js');
 
 //import static values
 const spellStatic = require('../../staticData/spell.json');
@@ -35,7 +36,7 @@ function GetData() {
         setSummonerName("Summoner's Name: " + name);
         
         //create request URL
-        let requestURL = process.env.SERVER_URL + '/api/:' + name;
+        let requestURL = config.SERVER_URL + '/api/:' + name;
         
         console.log(requestURL);
         //send GET request and get data for the summoner's name
