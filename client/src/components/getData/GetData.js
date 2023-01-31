@@ -58,16 +58,17 @@ function GetData() {
           
         })
         .catch((err) => {
+          console.log(err);
           setMatches([]);
           //if server is down
           if(err.code && err.code === 'ERR_NETWORK'){
             setStatus(<div className='status-error'>ERROR : "Not able to connect with server"</div>);
           }
           //print the error message from server
-          else if(err.response.data.status.message){
+          /*else if(err.response.data.status.message){
             setStatus(<div className='status-error'>ERROR : {err.response.data.status.message}</div>);
             console.log(err);
-          }
+          }*/
           //in case of any unhandled error
           else{
             setStatus(<div className='status-error'>ERROR : Internal Server Error</div>);
