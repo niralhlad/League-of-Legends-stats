@@ -10,6 +10,8 @@ const corsOptions = {
     origin: process.env.CLIENT_URL
 }
 
+console.log("CLIENT_URL: "+process.env.CLIENT_URL);
+
 //create instance of Route
 const routes = new Routes();
 
