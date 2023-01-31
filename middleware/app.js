@@ -7,7 +7,7 @@ const Routes = require('./routes');
 
 //set cors origin
 const corsOptions = {
-    origin: config.ORIGIN_URL + ":" + config.ORIGIN_PORT
+    origin: process.env.CLIENT_URL
 }
 
 //create instance of Route

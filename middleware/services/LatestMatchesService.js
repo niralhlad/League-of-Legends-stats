@@ -12,7 +12,6 @@ class LatestMatchesService{
         this.getSummonerDetailsByNameURL = config.GET_SUMMONER_DETAILS_BY_NAME_URL;
         this.getLatestMatchesURL = config.GET_LASTEST_MATCHES_BY_PUUID;
         this.getMatchDetailsbyIDURL = config.GET_MATCH_DETAILS_BY_ID;
-        this.KEY = config.KEY;
     }
 
     /**
@@ -22,7 +21,7 @@ class LatestMatchesService{
     header(){
         return {
             headers: {
-                "X-Riot-Token": this.KEY
+                "X-Riot-Token": process.env.KEY
             }  
         }
     }

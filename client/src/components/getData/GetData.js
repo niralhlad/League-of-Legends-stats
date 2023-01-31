@@ -36,7 +36,7 @@ function GetData() {
         setSummonerName("Summoner's Name: " + name);
         
         //create request URL
-        let requestURL = config.URL + ':' + name;
+        let requestURL = process.env.SERVER_URL + '/api/:' + name;
         
         //send GET request and get data for the summoner's name
         axios.get(requestURL)
