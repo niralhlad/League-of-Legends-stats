@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './GetData.css';
-const config = require('../../config.js');
 
 //import static values
 const spellStatic = require('../../staticData/spell.json');
