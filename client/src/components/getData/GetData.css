@@ -1,0 +1,63 @@
+.div{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:rgb(28, 28, 31);
+}
+
+.div-win{
+  height: 150px;
+  width: 1000px;
+  background-color: rgb(42, 53, 76);
+  align-items: center;
+  border-width:1px; 
+  border-left-width: 7px;
+  border-style:solid; 
+  border-left-color:rgb(92, 132, 225);
+  border-radius: 5px;
+}
+
+.div-loss{
+  height: 150px;
+  width: 1000px;
+  background-color: rgb(84, 54, 59);
+  align-items: center;
+  border-width:1px; 
+  border-left-width: 7px;
+  border-style:solid; 
+  border-left-color:rgb(214, 78, 91);
+  border-radius: 5px;
+}
+
+.status-error{
+  height: 50px;
+  width: 1000px;
+  background-color:  rgb(214, 78, 91);
+  align-items: center;
+  border-width:1px; 
+  border-style:solid; 
+  border-radius: 5px;
+  color: rgb(42, 53, 76);
+  text-align: center;
+}
+
+.status-loading{
+  height: 50px;
+  width: 1000px;
+  background-color: rgb(163, 207, 236);
+  align-items: center;
+  border-width:1px; 
+  border-style:solid; 
+  border-radius: 5px;
+  color: rgb(177, 127, 142);
+  text-align: center;
+}
+
+.p{
+  font-size: medium;
+  text-align: left;
+  color: rgb(158,158,175);
+}
